@@ -58,9 +58,13 @@ class Service extends Component
 
     public function render()
     {
-        $serviceTypes = ServiceType::with(['services' => function ($q) {
-            $q->where('status', 1)->with('media');
-        }])->get();
+        $serviceTypes = ServiceType::with([
+            'services' => function ($q) {
+                $q->where('status', 1)
+                    ->orderBy('sort_order')
+                    ->with('media');
+            }
+        ])->get();
 
         return view('livewire.frontend.service.service', [
             'serviceTypes' => $serviceTypes,

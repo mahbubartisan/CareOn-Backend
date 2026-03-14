@@ -55,7 +55,7 @@
                     </p>
 
                     <!-- CARE LEVELS -->
-                    <div class="mt-8 grid gap-6 md:grid-cols-3">
+                    <div class="mt-8 grid grid-cols-1 lg:grid-cols-3 gap-6">
                         @foreach ($service->careLevels as $level)
                             <div
                                 class="rounded-2xl border bg-gray-50/20 p-6 transition duration-300 ease-in-out hover:bg-white hover:shadow-[0_0_25px_rgba(0,0,0,0.1)]">

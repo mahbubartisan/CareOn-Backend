@@ -138,10 +138,10 @@ class EditService extends Component
             2. DELETE OLD CARE DATA
             -------------------------- */
             ServiceCareLevel::where('service_id', $service->id)->delete();
-            CareOption::whereIn(
-                'care_level_id',
-                $this->form->careLevels->pluck('id')
-            )->delete();
+            // CareOption::whereIn(
+            //     'care_level_id',
+            //     $this->form->careLevels->pluck('id')
+            // )->delete();
 
 
             /* -------------------------
