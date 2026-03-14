@@ -33,6 +33,7 @@ class CreateBlog extends Component
             'image' => $imagePath,
             'title' => $this->form->title,
             'slug' => str()->slug($this->form->title),
+            'video_url' => $this->form->video_url,
             'description' => $this->form->description,
         ]);
 

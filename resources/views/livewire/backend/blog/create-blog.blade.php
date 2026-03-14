@@ -43,6 +43,18 @@
                 @enderror
             </div>
 
+            <!-- URL -->
+            <div>
+                <label for="video_url" class="block text-sm text-gray-700 dark:text-gray-400">
+                    Video Url
+                </label>
+                <input type="text" wire:model="form.video_url" id="video_url"
+                    class="mt-2 w-full rounded-md border border-gray-200 bg-white px-4 py-2.5 text-sm text-gray-800 transition duration-300 ease-in-out focus:border-blue-600 focus:outline-none focus:ring-0 dark:border-[#233A57] dark:bg-[#132337] dark:text-gray-300" />
+                @error("form.video_url")
+                    <span class="text-xs text-red-500">{{ $message }}</span>
+                @enderror
+            </div>
+
             <!-- Description -->
             <div>
                 <div wire:ignore>

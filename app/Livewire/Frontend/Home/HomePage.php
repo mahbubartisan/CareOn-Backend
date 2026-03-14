@@ -30,7 +30,9 @@ class HomePage extends Component
     {
         $serviceTypes = ServiceType::with([
             'services' => function ($q) {
-                $q->where('status', 1)->with('media');
+                $q->where('status', 1)
+                ->orderBy('sort_order')
+                ->with('media');
             }
         ])->whereHas('services', function ($q) {
             $q->where('status', 1);

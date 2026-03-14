@@ -16,15 +16,15 @@ class Footer extends Component
         $this->settings = Settings::with('siteLogo')->first();
         // $this->services = Service::where('status', 1)->get(['id', 'name', 'slug', 'form_key']);
         $this->services = Service::where('status', 1)
-        ->orderByRaw("
-            CASE 
-                WHEN service_type_id = 1 THEN 1
-                WHEN service_type_id = 3 THEN 3
-                ELSE 4
-            END
-        ")
-        ->get(['id', 'name', 'slug', 'form_key']);
-
+            ->orderByRaw("
+        CASE 
+            WHEN service_type_id = 1 THEN 1
+            WHEN service_type_id = 3 THEN 3
+            ELSE 4
+        END
+    ")
+            ->orderBy('sort_order')
+            ->get(['id', 'name', 'slug', 'form_key']);
     }
 
     public function redirectToServiceForm($slug)

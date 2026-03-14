@@ -99,8 +99,31 @@
         </div>
 
         <!-- Featured Image -->
-        <img src="{{ asset(@$blog->media?->path ?? "default.jpg") }}"
-            class="mt-6 w-full rounded-2xl object-cover shadow-sm" alt="{{ $blog->title }}">
+        {{-- <img src="{{ asset(@$blog->media?->path ?? "default.jpg") }}"
+            class="mt-6 w-full rounded-2xl object-cover shadow-sm" alt="{{ $blog->title }}"> --}}
+        <a href="{{ $blog->video_url }}" target="_blank" class="group relative mt-6 block">
+
+            <!-- Thumbnail -->
+            <img src="{{ asset(@$blog->media?->path ?? "default.jpg") }}"
+                class="w-full rounded-2xl object-cover shadow-sm" alt="{{ $blog->title }}">
+
+            <!-- Dark overlay -->
+            <div class="absolute inset-0 rounded-2xl bg-black/30 transition group-hover:bg-black/40"></div>
+
+            <!-- Play Button -->
+            <div class="absolute inset-0 flex items-center justify-center">
+                <div
+                    class="flex h-16 w-16 items-center justify-center rounded-full bg-red-600 text-white shadow-lg transition group-hover:scale-110">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ml-1 h-7 w-7" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z" />
+                    </svg>
+
+                </div>
+            </div>
+
+        </a>
 
         <!-- Content -->
         <div class="prose prose-teal mt-10 max-w-none">

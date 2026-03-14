@@ -94,7 +94,7 @@
                     </h1>
 
                     <!-- Short Description -->
-                    <p class="max-w-3xl text-gray-600">
+                    <p class="max-w-3xl text-sm text-gray-600">
                         {!! $service->short_desc !!}
                     </p>
 

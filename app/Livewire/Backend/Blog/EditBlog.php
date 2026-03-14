@@ -25,6 +25,7 @@ class EditBlog extends Component
 
         $this->form->fill([
             'title' => $blog->title,
+            'video_url' => $blog->video_url,
             'description' => $blog->description,
         ]);
     }
@@ -58,12 +59,13 @@ class EditBlog extends Component
             'image' => $newPhotoId,
             'title' => $this->form->title,
             'slug' => str()->slug($this->form->title),
+            'video_url' => $this->form->video_url,
             'description' => $this->form->description,
         ]);
 
         session()->flash('success', 'Blog updated!');
         return redirect()->route('blog');
-    } 
+    }
 
     public function render()
     {

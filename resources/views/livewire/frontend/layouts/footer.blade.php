@@ -156,7 +156,7 @@
                             d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
                     </svg>
                     <div>
-                        <p>{{ $settings->phone }}</p>
+                        <p>{{ $settings->phone }} (<span>what's app</span>)</p>
                         <p class="text-xs">24/7 Support</p>
                     </div>
                 </li>
