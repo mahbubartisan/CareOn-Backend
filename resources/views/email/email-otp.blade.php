@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="UTF-8">
-        <title>Verify Your Email</title>
+        <title>Careon OTP Verification Email</title>
     </head>
 
     <body style="margin:0;background:#f5f5f5;font-family:Arial,Helvetica,sans-serif;">
@@ -28,7 +28,7 @@
 
                         <!-- Title -->
                         <tr>
-                            <td style="font-size:26px;font-weight:700;color:#000;">
+                            <td style="font-size:23px;font-weight:700;color:#000;">
                                 Verify your Email
                             </td>
                         </tr>

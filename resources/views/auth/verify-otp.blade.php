@@ -53,7 +53,15 @@
 
             <!-- Sub text -->
             <p class="mt-2 text-center text-sm text-gray-500">
-                We’ve sent a 6-digit verification code to <span class="font-bold text-gray-800">{{ $user->phone }}</span> <br>
+                We’ve sent a 6-digit verification code to 
+                <span class="font-bold text-gray-800">
+                    {{ substr($user->phone,0,3) }}****{{ substr($user->phone,-3) }}
+                </span> 
+                and 
+                <span class="font-bold text-gray-800">
+                    {{ substr($user->email,0,3) }}****{{ strstr($user->email,'@') }}
+                </span>.
+                <br>
                 Please enter it below to continue.
             </p>
 

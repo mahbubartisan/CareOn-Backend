@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\RegisterRequest;
+use App\Mail\SendOtpMail;
 use App\Mail\VerifyUserEmail;
 use App\Models\User;
 use App\Providers\RouteServiceProvider;
@@ -90,6 +91,9 @@ class RegisteredUserController extends Controller
         $message = "CareOn OTP: {$otp}";
 
         SmsService::send($user->phone, $message);
+
+        // Send OTP email
+        Mail::to($user->email)->send(new SendOtpMail($otp));
 
         // Redirect to OTP verification page
         return redirect()->route('otp.verify.form', $user->id);
