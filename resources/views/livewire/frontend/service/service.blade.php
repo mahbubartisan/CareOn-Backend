@@ -1,0 +1,489 @@
+<div>
+    <!-- Our Services -->
+    <section class="pt-24">
+        <div class="mx-auto px-4 text-center">
+            <!-- Top Badge -->
+            <div class="mb-3 inline-block rounded-full bg-amber-500 px-3 py-1 text-xs font-semibold text-gray-900">
+                পেশাদার স্বাস্থ্যসেবা | Professional Healthcare Services
+            </div>
+
+            <!-- Main Heading -->
+            <h2 class="text-3xl font-extrabold text-gray-900 md:text-5xl">
+                Our Services
+                <span class="font-extrabold text-gray-900">| আমাদের সেবাসমূহ</span>
+            </h2>
+
+            <!-- Subtitle -->
+            <p class="mx-auto mt-2 max-w-2xl text-lg text-gray-500">
+                Comprehensive healthcare services delivered by verified professionals.
+                All healthcare providers are certified, background-checked, and highly trained.
+            </p>
+
+            <!-- Feature Boxes -->
+            <div class="mx-auto mt-8 grid max-w-6xl grid-cols-2 gap-4 lg:grid-cols-4">
+                <!-- 1 -->
+                <div class="flex flex-col items-center justify-center rounded-xl bg-[#FAFBFB] p-4">
+                    <svg class="mb-2 h-9 w-9 flex-shrink-0 text-[#00B686]"" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24">
+                        <title xmlns="">certificate</title>
+                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="1.5">
+                            <path d="M12 15a3 3 0 1 0 6 0a3 3 0 1 0-6 0" />
+                            <path d="M13 17.5V22l2-1.5l2 1.5v-4.5" />
+                            <path
+                                d="M10 19H5a2 2 0 0 1-2-2V7c0-1.1.9-2 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-1 1.73M6 9h12M6 12h3m-3 3h2" />
+                        </g>
+                    </svg>
+                    <p class="text-sm font-medium text-gray-900">
+                        Certified Healthcare Professionals
+                    </p>
+                </div>
+
+                <!-- 2 -->
+                <div class="flex flex-col items-center justify-center rounded-xl bg-[#FAFBFB] p-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="mb-2 h-8 w-8 flex-shrink-0 text-[#00B686]">
+                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                        <path d="m9 11 3 3L22 4"></path>
+                    </svg>
+                    <p class="text-sm font-medium text-gray-900">Background Checked</p>
+                </div>
+
+                <!-- 3 -->
+                <div class="flex flex-col items-center justify-center rounded-xl bg-[#FAFBFB] p-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="mb-2 h-8 w-8 flex-shrink-0 text-[#00B686]">
+                        <path
+                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                        </path>
+                    </svg>
+                    <p class="text-sm font-medium text-gray-900">Flexible Pricing</p>
+                </div>
+
+                <!-- 4 -->
+                <div class="flex flex-col items-center justify-center rounded-xl bg-[#FAFBFB] p-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="mb-2 h-8 w-8 flex-shrink-0 text-[#00B686]">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <p class="text-sm font-medium text-gray-900">24/7 Availability</p>
+                </div>
+            </div>
+        </div>
+        <!-- Section A -->
+        {{-- <div class="px-4 py-12">
+            <h3 class="text-xl lg:text-2xl font-semibold tracking-tight text-gray-900 mb-6">
+                Special Healthcare Services
+            </h3>
+
+            <!-- 1. Nursing Care Service -->
+            <div
+                class="relative mb-6 p-6 border border-gray-200 rounded-xl bg-white transition hover:shadow-[0_6px_30px_rgba(15,23,42,0.06)]">
+                <!-- badge -->
+                <span
+                    class="absolute top-3 right-3 bg-[#1f64ad] hover:bg-[#1f64ad]/80 text-white text-xs font-semibold px-3 py-0.5 rounded-full shadow-sm">Most Popular</span>
+
+                <!-- layout: stack on mobile, row on sm+ -->
+                <div
+                    class="flex flex-col sm:flex-row sm:items-start sm:space-x-5 sm:text-left">
+                    <!-- icon (centered on mobile, left on larger screens) -->
+                    <div
+                        class="w-20 h-20 rounded-2xl bg-[#E6F9F3] flex items-center justify-center flex-shrink-0 mb-6">
+                        <img
+                            src="https://care-on-connect.lovable.app/assets/service-nursing-A8y88SVV.png"
+                            alt="Caregiver"
+                            class="w-12 h-12" />
+                    </div>
+
+                    <!-- main content -->
+                    <div class="flex-1">
+                        <h4 class="font-semibold text-xl text-gray-900">
+                            Nursing Care Service
+                        </h4>
+                        <p class="text-base text-gray-500 mt-2 sm:mx-0">
+                            8/12/24 hours for daily/monthly basis under Basic, Standard
+                            &amp; Critical Care packages
+                        </p>
+
+                        <!-- button: full width on mobile, auto on sm+ -->
+                        <div class="mt-5">
+                            <a
+                                href="service-detail.html"
+                                class="inline-flex items-center justify-center gap-2 bg-[#17A884] hover:bg-[#139673] text-white text-sm font-semibold px-5 py-3 rounded-xl transition">
+                                <span>View Details &amp; Book</span>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="w-4 h-4"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M9 5l7 7-7 7" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 2. Caregiver for Elderly, Bedridden & Post-Hospital Care -->
+            <div
+                class="relative mb-6 p-6 border border-gray-200 rounded-xl bg-white transition hover:shadow-[0_6px_30px_rgba(15,23,42,0.06)]">
+                <div
+                    class="flex flex-col sm:flex-row sm:items-start sm:space-x-5 sm:text-left">
+                    <div
+                        class="w-20 h-20 rounded-2xl bg-[#E6F9F3] flex items-center justify-center flex-shrink-0 mb-6">
+                        <img
+                            src="https://care-on-connect.lovable.app/assets/service-nursing-A8y88SVV.png"
+                            alt="Caregiver"
+                            class="w-12 h-12" />
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="font-semibold text-xl text-gray-900">
+                            Caregiver for Elderly, Bedridden & Post-Hospital Care
+                        </h4>
+                        <p class="text-sm text-gray-500 mt-2 sm:mx-0">
+                            8/12/24 hours for daily/monthly basis under Basic, Standard &
+                            Critical Care packages
+                        </p>
+                        
+                        <div class="mt-5">
+                            <a
+                                href="service-detail.html"
+                                class="inline-flex items-center justify-center gap-2 bg-[#17A884] hover:bg-[#139673] text-white text-sm font-semibold px-5 py-3 rounded-xl transition">
+                                <span>View Details &amp; Book</span>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="w-4 h-4"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M9 5l7 7-7 7" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 3. Baby Care / Nanny Service -->
+            <div
+                class="relative mb-6 p-6 border border-gray-200 rounded-xl bg-white transition hover:shadow-[0_6px_30px_rgba(15,23,42,0.06)]">
+                <div
+                    class="flex flex-col sm:flex-row sm:items-start sm:space-x-5 sm:text-left">
+                    <div
+                        class="w-20 h-20 rounded-2xl bg-[#E6F9F3] flex items-center justify-center flex-shrink-0 mb-6">
+                        <img
+                            src="https://care-on-connect.lovable.app/assets/service-nursing-A8y88SVV.png"
+                            alt="Caregiver"
+                            class="w-12 h-12" />
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="font-semibold text-xl text-gray-900">
+                            Baby Care / Nanny Service
+                        </h4>
+                        <p class="text-sm text-gray-500 mt-2 sm:mx-0">
+                            8/12/24 hours for daily/monthly basis under Basic, Standard &
+                            Critical Care packages.
+                        </p>
+                        
+                        <div class="mt-5">
+                            <a
+                                href="service-detail.html"
+                                class="inline-flex items-center justify-center gap-2 bg-[#17A884] hover:bg-[#139673] text-white text-sm font-semibold px-5 py-3 rounded-xl transition">
+                                <span>View Details &amp; Book</span>
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="w-4 h-4"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M9 5l7 7-7 7" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> --}}
+
+        {{-- <div class="px-4 py-12">
+
+            @foreach ($serviceTypes as $type)
+                <!-- Service Type Title -->
+                <h3 class="mb-6 text-xl font-semibold tracking-tight text-gray-900 lg:text-2xl">
+                    {{ $type->name }}
+                </h3>
+
+                @foreach ($type->services->where("status", 1) as $service)
+                    <div
+                        class="relative mb-6 rounded-xl border border-gray-200 bg-white p-6 transition hover:shadow-[0_6px_30px_rgba(15,23,42,0.06)]">
+
+                        <!-- badge -->
+                        @if ($service->badge == 1)
+                            <span
+                                class="absolute right-3 top-3 rounded-full bg-teal-500 px-3 py-0.5 text-xs font-semibold text-white shadow-sm hover:bg-[#1f64ad]/80">
+                                Most Popular
+                            </span>
+                        @elseif ($service->badge == 2)
+                            <span
+                                class="absolute right-3 top-3 rounded-full bg-teal-500 px-3 py-0.5 text-xs font-semibold text-white shadow-sm hover:bg-[#1f64ad]/80">
+                                24/7
+                            </span>
+                        @endif
+
+                        <div class="flex flex-col sm:flex-row sm:items-start sm:space-x-5 sm:text-left">
+                            <div
+                                class="mb-6 flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-2xl bg-[#E6F9F3]">
+                                <img src="{{ asset(optional($service->media)->path) }}" alt="{{ $service->name }}"
+                                    class="h-12 w-12" />
+                            </div>
+
+                            <div class="flex-1">
+                                <h4 class="text-xl font-semibold tracking-tight text-gray-900">
+                                    {{ $service->name }}
+                                </h4>
+
+                                <div class="ql-editor mt-2 text-base text-gray-500 sm:mx-0">
+                                    {!! $service->short_desc !!}
+                                </div>
+
+                                <div class="mt-5">
+                                    <button wire:click="redirectToServiceForm('{{ $service->slug }}')"
+                                        class="inline-flex items-center justify-center gap-2 rounded-xl bg-[#17A884] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#139673]">
+                                        View Details &amp; Book
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            @endforeach
+        </div> --}}
+        <div class="px-4 py-12">
+            <!-- Service Cards -->
+            {{-- @foreach ($serviceTypes as $serviceType)
+                <section class="mx-auto px-4 pb-16">
+                    <h3 class="mb-6 text-xl font-semibold text-gray-900 lg:text-2xl">
+                        {{ $serviceType->name }}
+                    </h3>
+
+                    <!-- Medical Care Services -->
+                    <div class="grid grid-cols-1 gap-5 lg:grid-cols-3">
+                        @foreach ($serviceType->services as $service)
+                            <button type="button" wire:click.prevent="redirectToServiceForm('{{ $service->slug }}')"
+                                class="group rounded-2xl border border-gray-200 bg-gray-50/20 p-6 transition duration-300 ease-in-out hover:bg-white hover:shadow-[0_0_25px_rgba(0,0,0,0.1)]">
+
+                                <div class="flex items-start gap-4">
+
+                                    <!-- Icon -->
+                                    <div
+                                        class="flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-2xl bg-[#E6F9F3]">
+                                        <img src="{{ asset(optional($service->media)->path) }}"
+                                            alt="{{ $service->name }}" class="h-14 w-14 object-contain" />
+                                    </div>
+
+                                    <!-- Content -->
+                                    <div class="flex flex-1 flex-col gap-1 text-left">
+
+                                        <!-- Title + Badge (same line) -->
+                                        <div class="flex items-center gap-3">
+                                            <h4
+                                                class="font-semibold leading-snug text-gray-900 group-hover:text-teal-500">
+                                                {{ $service->name }}
+                                            </h4>
+
+                                            <span class="ml-auto">
+                                                @if ($service->badge == 1)
+                                                    <span
+                                                        class="rounded-full bg-teal-500 px-2 py-1 text-xs font-semibold text-white">
+                                                        Most Popular
+                                                    </span>
+                                                @elseif ($service->badge == 2)
+                                                    <span
+                                                        class="rounded-full bg-teal-500 px-2 py-1 text-xs font-semibold text-white">
+                                                        24/7
+                                                    </span>
+                                                @endif
+                                            </span>
+                                        </div>
+
+                                        <!-- Description -->
+                                        <p class="line-clamp-3 text-sm text-gray-600">
+                                            {{ Str::limit(strip_tags($service->short_desc), 60) }}
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </button>
+                        @endforeach
+                    </div>
+
+
+
+
+                </section>
+            @endforeach --}}
+
+
+            {{-- @foreach ($serviceTypes as $serviceType)
+                <section class="mx-auto px-4 pb-16">
+
+                    <h3 class="mb-6 text-xl font-semibold text-gray-900 lg:text-2xl">
+                        {{ $serviceType->name }}
+                    </h3>
+
+                    <div class="grid grid-cols-1 gap-5 lg:grid-cols-3">
+                        @foreach ($serviceType->services as $service)
+                            <button type="button" wire:click.prevent="redirectToServiceForm('{{ $service->slug }}')"
+                                class="group relative rounded-2xl border border-gray-200 bg-gray-50/20 p-6 transition duration-300 ease-in-out hover:bg-white hover:shadow-[0_0_25px_rgba(0,0,0,0.1)]">
+
+                                <!-- 🖥 Desktop badge (top-right) -->
+                                @if ($service->badge)
+                                    <span
+                                        class="absolute right-4 top-4 hidden rounded-full bg-teal-500 px-2 py-1 text-xs font-semibold text-white shadow-sm lg:inline-flex">
+                                        {{ $service->badge == 1 ? "Most Popular" : "24/7" }}
+                                    </span>
+                                @endif
+
+                                <div class="flex items-start gap-4">
+
+                                    <!-- Icon -->
+                                    <div
+                                        class="flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-2xl bg-[#E6F9F3]">
+                                        <img src="{{ asset(optional($service->media)->path) }}"
+                                            alt="{{ $service->name }}" class="h-14 w-14 object-contain" />
+                                    </div>
+
+                                    <!-- Content -->
+                                    <div class="flex flex-1 flex-col gap-2 text-left">
+
+                                        <!-- Title -->
+                                        <h4 class="font-semibold leading-snug text-gray-900 group-hover:text-teal-500">
+                                            {{ $service->name }}
+                                        </h4>
+
+                                        <!-- Mobile badge (UNDER title) -->
+                                        @if ($service->badge)
+                                            <span
+                                                class="w-fit rounded-full bg-teal-500 px-2 py-1 text-xs font-semibold text-white lg:hidden">
+                                                {{ $service->badge == 1 ? "Most Popular" : "24/7" }}
+                                            </span>
+                                        @endif
+
+                                        <!-- Description -->
+                                        <p class="line-clamp-3 text-sm text-gray-600">
+                                            {{ strip_tags($service->short_desc) }}
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </button>
+                        @endforeach
+                    </div>
+                </section>
+            @endforeach --}}
+            @foreach ($serviceTypes as $serviceType)
+                <section class="mx-auto px-4 pb-16">
+
+                    <!-- Section Title -->
+                    <h3 class="mb-6 text-xl font-semibold text-gray-900 lg:text-2xl">
+                        {{ $serviceType->name }}
+                    </h3>
+
+                    <div class="grid grid-cols-1 gap-5 lg:grid-cols-3">
+                        @foreach ($serviceType->services as $service)
+                            <button type="button" wire:click.prevent="redirectToServiceForm('{{ $service->slug }}')"
+                                class="group relative rounded-2xl border border-gray-200 bg-gray-50/20 p-4 pt-[41px] transition duration-300 ease-in-out hover:bg-white hover:shadow-[0_0_25px_rgba(0,0,0,0.1)]">
+
+                                <!-- Desktop Badge (Top Right Corner) -->
+                                @if ($service->badge)
+                                    <span
+                                        class="absolute right-4 top-4 hidden rounded-full bg-teal-500 px-2 py-0.5 text-[10px] font-semibold text-white shadow-sm lg:inline-flex">
+                                        {{ $service->badge == 1 ? "Most Popular" : "24/7" }}
+                                    </span>
+                                @endif
+
+                                <div class="flex items-start gap-4">
+
+                                    <!-- Icon -->
+                                    <div
+                                        class="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-2xl bg-[#E6F9F3]">
+                                        <img src="{{ asset(optional($service->media)->path) }}"
+                                            alt="{{ $service->name }}" class="h-16 w-16 object-contain" />
+                                    </div>
+
+                                    <!-- Content -->
+                                    <div class="flex flex-1 flex-col gap-2 text-left">
+
+                                        <!-- Title -->
+                                        <h4 class="font-semibold leading-snug text-gray-900 group-hover:text-teal-500">
+                                            {{ $service->name }}
+                                        </h4>
+
+                                        <!-- Mobile Badge (Under Title) -->
+                                        @if ($service->badge)
+                                            <span
+                                                class="w-fit rounded-full bg-teal-500 px-2 py-0.5 text-[10px] font-semibold text-white lg:hidden">
+                                                {{ $service->badge == 1 ? "Most Popular" : "24/7" }}
+                                            </span>
+                                        @endif
+
+                                        <!-- Description -->
+                                        <p class="line-clamp-3 text-sm text-gray-600">
+                                            {!! str()->limit(strip_tags($service->short_desc), 90) !!}
+                                        </p>
+
+                                    </div>
+                                </div>
+
+                            </button>
+                        @endforeach
+                    </div>
+
+                </section>
+            @endforeach
+
+        </div>
+    </section>
+
+    <div class="mx-auto px-4 pb-16">
+        <div
+            class="rounded-2xl bg-gradient-to-r from-[#239C83] via-[#1E7F86] to-[#1D5A91] px-8 py-7 text-center text-white">
+            <h2 class="mb-3 text-2xl font-bold">
+                Not Sure Which Service You Need?
+            </h2>
+            <p class="mb-6 text-base text-white/90">
+                Our support team can help you choose the right care for your situation
+            </p>
+
+            <div class="flex flex-col items-center justify-center gap-4 sm:flex-row">
+                <a href="{{ route("frontend.contact-us") }}"
+                    class="rounded-xl bg-[#1D64B4] px-7 py-3 text-sm font-medium text-white">
+                    Contact Support
+                </a>
+                <a href="{{ route("frontend.service") }}"
+                    class="rounded-xl bg-white px-6 py-3 text-sm font-medium text-gray-900 hover:bg-amber-500">
+                    Book Now
+                </a>
+            </div>
+        </div>
+    </div>
+
+    @push("title")
+        CareOn - Services
+    @endpush
+</div>

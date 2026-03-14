@@ -1,0 +1,69 @@
+<?php
+
+namespace App\Livewire\Frontend\Service;
+
+use App\Models\Service as ModelsService;
+use App\Models\ServiceType;
+use Livewire\Component;
+
+class Service extends Component
+{
+
+    // public function redirectToServiceForm($slug)
+    // {
+    //     $service = ModelsService::where('slug', $slug)->firstOrFail();
+
+    //     switch ($service->form_key) {
+
+    //         case 'special-care':
+    //             return redirect()->route('frontend.service.detail', [
+    //                 'slug' => $service->slug
+    //             ]);
+
+    //         case 'diagnostic':
+    //             return redirect()->route('frontend.service.diagnostic', [
+    //                 'slug' => $service->slug
+    //             ]);
+
+    //         case 'ambulance':
+    //             return redirect()->route('frontend.service.ambulance', [
+    //                 'slug' => $service->slug
+    //             ]);
+
+    //         case 'appointment':
+    //             return redirect()->route('frontend.service.consultation', [
+    //                 'slug' => $service->slug
+    //             ]);
+
+    //         default:
+    //             abort(404);
+    //     }
+    // }
+
+    public function redirectToServiceForm($slug)
+    {
+        $service = ModelsService::where('slug', $slug)->firstOrFail();
+
+        match ($service->form_key) {
+            'special-care' => $this->redirectRoute('frontend.service.detail', ['slug' => $service->slug]),
+            'physiotherapy' => $this->redirectRoute('frontend.service.physiotherapy', ['slug' => $service->slug]),
+            'diagnostic'   => $this->redirectRoute('frontend.service.diagnostic', ['slug' => $service->slug]),
+            'ambulance'    => $this->redirectRoute('frontend.service.ambulance', ['slug' => $service->slug]),
+            'doctor-consultation'  => $this->redirectRoute('frontend.service.consultation', ['slug' => $service->slug]),
+            'doctor-visit'  => $this->redirectRoute('frontend.service.doctor.visit', ['slug' => $service->slug]),
+            'nursing-service'  => $this->redirectRoute('frontend.service.nursing-service', ['slug' => $service->slug]),
+            default        => abort(404),
+        };
+    }
+
+    public function render()
+    {
+        $serviceTypes = ServiceType::with(['services' => function ($q) {
+            $q->where('status', 1)->with('media');
+        }])->get();
+
+        return view('livewire.frontend.service.service', [
+            'serviceTypes' => $serviceTypes,
+        ])->extends('livewire.frontend.layouts.app');
+    }
+}

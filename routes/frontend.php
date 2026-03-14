@@ -1,0 +1,41 @@
+<?php
+
+use App\Livewire\Frontend\About\About;
+use App\Livewire\Frontend\Blog\Blog;
+use App\Livewire\Frontend\Blog\BlogDetail;
+use App\Livewire\Frontend\Booking\BookingConfirmation;
+use App\Livewire\Frontend\CareProvider\CareProvider;
+use App\Livewire\Frontend\Contact\Contact;
+use App\Livewire\Frontend\Home\HomePage;
+use App\Livewire\Frontend\PriceCalculator\PriceCalculator;
+use App\Livewire\Frontend\Service\AmbulanceSupport;
+use App\Livewire\Frontend\Service\Diagnostic;
+use App\Livewire\Frontend\Service\DoctorConsultation;
+use App\Livewire\Frontend\Service\DoctorVisit;
+use App\Livewire\Frontend\Service\NursingService;
+use App\Livewire\Frontend\Service\Physiotherapy;
+use App\Livewire\Frontend\Service\Service;
+use App\Livewire\Frontend\Service\ServiceDetail;
+use Illuminate\Support\Facades\Route;
+
+Route::as('frontend.')->group(function () {
+    Route::get('/', HomePage::class)->name('home-page');
+    Route::get('/about-us', About::class)->name('about');
+    Route::get('/contact-us', Contact::class)->name('contact-us');
+    Route::get('/services', Service::class)->name('service');
+    Route::get('/special-care/{slug}', ServiceDetail::class)->name('service.detail');
+    Route::get('/physiotherapy/{slug}', Physiotherapy::class)->name('service.physiotherapy');
+    Route::get('/health-tips', Blog::class)->name('blogs');
+    Route::get('/health-tips/{slug}', BlogDetail::class)->name('blog-detail');
+    Route::get('/provider-signup', CareProvider::class)->name('provider-signup');
+    Route::get('/price-calculator', PriceCalculator::class)->name('price-calculation');
+    Route::get('/booking-confirmation', BookingConfirmation::class)->name('confirm');
+
+
+    Route::get('/diagnostic/{slug}', Diagnostic::class)->name('service.diagnostic');
+    Route::get('/ambulance/{slug}', AmbulanceSupport::class)->name('service.ambulance');
+    Route::get('/consultation/{slug}', DoctorConsultation::class)->name('service.consultation');
+    Route::get('/doctor/{slug}', DoctorVisit::class)->name('service.doctor.visit');
+    Route::get('/nursing/{slug}', NursingService::class)->name('service.nursing-service');
+
+});
