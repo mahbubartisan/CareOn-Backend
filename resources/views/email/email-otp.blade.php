@@ -17,7 +17,7 @@
 
                         <!-- Logo -->
                         <tr>
-                            <td style="font-size:24px;font-weight:700;color:#000;">
+                            <td style="font-size:24px;font-weight:700;color:#0d9488;">
                                 CareOn
                             </td>
                         </tr>
@@ -28,7 +28,7 @@
 
                         <!-- Title -->
                         <tr>
-                            <td style="font-size:23px;font-weight:700;color:#000;">
+                            <td style="font-size:19px;font-weight:600;color:#000;">
                                 Verify your Email
                             </td>
                         </tr>

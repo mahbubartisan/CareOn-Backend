@@ -29,7 +29,7 @@ class SendOtpMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Your CareOn OTP Code',
+            subject: 'Your CareOn OTP',
         );
     }
 

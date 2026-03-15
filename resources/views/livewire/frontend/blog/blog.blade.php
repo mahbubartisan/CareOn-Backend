@@ -101,7 +101,7 @@
                             class="group block rounded-2xl border bg-white transition-all hover:shadow-lg">
 
                             <img src="{{ asset($blog->media?->path) }}" class="h-56 w-full rounded-t-2xl object-cover"
-                                alt="{{ $blog->title }}">
+                                alt="{{ $blog->title }}" loading="lazy">
 
                             <div class="p-5">
                                 <h3 class="text-lg font-semibold text-gray-800 transition group-hover:text-teal-600 group-hover:underline"

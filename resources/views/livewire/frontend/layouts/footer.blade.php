@@ -21,7 +21,7 @@
         <div>
             <div class="mb-3 flex items-center space-x-3">
                 <div class="flex h-10 w-10 items-center justify-center overflow-hidden rounded-full bg-white">
-                    <img src="{{ asset(@$settings->siteLogo?->path) }}" alt="{{ $settings->site_name }}"
+                    <img src="{{ asset(@$settings->siteLogo?->path) }}" loading="lazy" alt="{{ $settings->site_name }}"
                         class="h-full w-full object-contain" />
                 </div>
 

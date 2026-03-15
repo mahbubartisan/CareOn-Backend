@@ -10,7 +10,7 @@
                 <!-- Left: Logo -->
                 <div class="h-14 w-auto flex-shrink-0 sm:h-14">
                     <a href="{{ route("frontend.home-page") }}">
-                        <img src="{{ asset(@$settings->siteLogo?->path) }}" alt="{{ $settings->site_name }}"
+                        <img src="{{ asset(@$settings->siteLogo?->path) }}" loading="lazy" alt="{{ $settings->site_name }}"
                             class="block h-full max-h-14 w-auto object-contain" />
                     </a>
                 </div>
@@ -93,7 +93,8 @@
 
                                 <!-- Avatar (always visible) -->
                                 <img src="{{ asset(auth()->user()->media->path ?? "images/user_profile.webp") }}"
-                                    class="h-8 w-8 rounded-full border object-cover" alt="{{ auth()->user()->name }}">
+                                    loading="lazy" alt="{{ auth()->user()->name }}"
+                                    class="h-8 w-8 rounded-full border object-cover">
 
                                 <!-- Name (desktop only) -->
                                 <span class="hidden text-sm font-medium text-gray-700 lg:block">
@@ -166,7 +167,7 @@
                 <div class="flex items-center space-x-2">
                     <div
                         class="flex h-10 w-10 items-center justify-center overflow-hidden rounded-full border bg-white">
-                        <img src="{{ asset(@$settings->siteLogo?->path) }}" alt="{{ $settings->site_name }}"
+                        <img src="{{ asset(@$settings->siteLogo?->path) }}" loading="lazy" alt="{{ $settings->site_name }}"
                             class="h-full w-full object-contain" />
                     </div>
                     <h2 class="text-lg font-semibold text-gray-900">{{ $settings->site_name }}</h2>

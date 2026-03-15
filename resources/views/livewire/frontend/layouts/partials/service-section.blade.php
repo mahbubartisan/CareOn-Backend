@@ -92,7 +92,7 @@
                         <!-- Icon -->
                         <div class="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-2xl bg-[#E6F9F3]">
                             <img src="{{ asset(optional($service->media)->path) }}" alt="{{ $service->name }}"
-                                class="h-16 w-16 object-contain" />
+                            loading="lazy" class="h-16 w-16 object-contain" />
                         </div>
 
                         <!-- Content -->

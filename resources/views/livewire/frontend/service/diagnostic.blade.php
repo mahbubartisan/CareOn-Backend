@@ -1072,7 +1072,7 @@
                             <!-- Note -->
                             <div>
                                 <label class="mb-1 block text-sm font-medium text-gray-900">
-                                    Special Instructions (Optional)
+                                    Special Instructions <span class="text-xs text-gray-400">(Optional)</span>
                                 </label>
                                 <textarea rows="2" wire:model="form.notes" placeholder="Any additional notes"
                                     class="w-full rounded-xl border border-gray-200 px-4 py-3 text-sm focus:border-teal-500 focus:outline-none"></textarea>

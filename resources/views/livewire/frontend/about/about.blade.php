@@ -31,9 +31,9 @@
 
             <div
                 class="mx-auto max-w-4xl space-y-4 rounded-xl border border-gray-200 bg-[#FCFDFD] p-8 text-justify text-gray-600">
-                
-                    {!! $about->our_story !!}
-                
+
+                {!! $about->our_story !!}
+
             </div>
         </section>
 
@@ -369,7 +369,7 @@
 
                         <!-- IMAGE -->
                         <div class="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
-                            <img src="{{ asset($advisor->media->path) }}" alt="{{ $advisor->name }}"
+                            <img src="{{ asset($advisor->media->path) }}" alt="{{ $advisor->name }}" loading="lazy"
                                 class="h-28 w-28 rounded-full object-contain" />
                         </div>
 

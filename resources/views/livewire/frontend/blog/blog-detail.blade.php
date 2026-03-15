@@ -104,7 +104,7 @@
         <a href="{{ $blog->video_url }}" target="_blank" class="group relative mt-6 block">
 
             <!-- Thumbnail -->
-            <img src="{{ asset(@$blog->media?->path ?? "default.jpg") }}"
+            <img src="{{ asset(@$blog->media?->path ?? "default.jpg") }}" loading="lazy"
                 class="w-full rounded-2xl object-cover shadow-sm" alt="{{ $blog->title }}">
 
             <!-- Dark overlay -->

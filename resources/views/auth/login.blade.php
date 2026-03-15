@@ -268,7 +268,9 @@
                     @csrf
 
                     <div>
-                        <label class="text-sm font-medium">Full Name *</label>
+                        <label class="text-sm font-medium">
+                            Full Name <span class="text-red-500">*</span>
+                        </label>
                         <input type="text" name="signup_name"
                             class="@error("signup_name") border-red-500 @else border-gray-200 @enderror w-full rounded-xl border px-3 py-2.5 text-sm transition duration-300 ease-in-out focus:border-emerald-200 focus:outline-none"
                             placeholder="John Doe" />
@@ -279,7 +281,9 @@
                     </div>
 
                     <div>
-                        <label class="text-sm font-medium">Phone *</label>
+                        <label class="text-sm font-medium">
+                            Phone <span class="text-red-500">*</span>
+                        </label>
                         <input type="number" name="signup_phone"
                             class="@error("signup_phone") border-red-500 @else border-gray-200 @enderror w-full rounded-xl border px-3 py-2.5 text-sm transition duration-300 ease-in-out focus:border-emerald-200 focus:outline-none"
                             placeholder="+880 1XXX-XXXXXX" />
@@ -290,7 +294,9 @@
                     </div>
 
                     <div>
-                        <label class="text-sm font-medium">Email *</label>
+                        <label class="text-sm font-medium">
+                            Email <span class="text-red-500">*</span>
+                        </label>
                         <input type="email" name="signup_email"
                             class="@error("signup_email") border-red-500 @else border-gray-200 @enderror w-full rounded-xl border px-3 py-2.5 text-sm transition duration-300 ease-in-out focus:border-emerald-200 focus:outline-none"
                             placeholder="your@email.com" />
@@ -300,7 +306,7 @@
                         @enderror
                     </div>
 
-                    <div>
+                    {{-- <div>
                         <label class="mb-1 block text-sm font-medium text-gray-900">Gender *</label>
                         <select name="signup_gender"
                             class="@error("signup_gender") border-red-500 @else border-gray-200 @enderror w-full rounded-xl border border-gray-200 px-4 py-[13px] text-sm focus:border-teal-500 focus:outline-none">
@@ -312,9 +318,9 @@
                         @error("signup_gender")
                             <p class="mt-1 text-xs text-red-500">{{ $message }}</p>
                         @enderror
-                    </div>
+                    </div> --}}
 
-                    <div>
+                    {{-- <div>
                         <label class="mb-1 block text-sm font-medium text-gray-900">Division *</label>
                         <select name="signup_division"
                             class="@error("signup_division") border-red-500 @else border-gray-200 @enderror w-full rounded-xl border border-gray-200 px-4 py-3 text-sm focus:border-teal-500 focus:outline-none">
@@ -326,10 +332,12 @@
                         @error("signup_division")
                             <span class="mt-1 text-xs text-red-500">{{ $message }}</span>
                         @enderror
-                    </div>
+                    </div> --}}
 
                     <div>
-                        <label class="text-sm font-medium">Password *</label>
+                        <label class="text-sm font-medium">
+                            Password <span class="text-red-500">*</span>
+                        </label>
                         <input type="password" name="signup_password"
                             class="@error("signup_password") border-red-500 @else border-gray-200 @enderror w-full rounded-xl border px-3 py-2.5 text-sm transition duration-300 ease-in-out focus:border-emerald-200 focus:outline-none"
                             placeholder="••••••••" />
@@ -343,8 +351,8 @@
                         class="flex w-full items-center justify-center gap-2 rounded-xl bg-emerald-600 py-3 text-sm font-medium text-white hover:bg-emerald-500 disabled:opacity-70"
                         :disabled="loading">
                         <svg x-show="loading" class="h-4 w-4 animate-spin text-white" xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round">
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
                             <path d="M21 12a9 9 0 1 1-6.219-8.56" />
                         </svg>
 
